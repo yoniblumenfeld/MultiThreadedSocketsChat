@@ -14,7 +14,6 @@ class TCPServer(object):
         self.server.listen(listeners)
         self.clients_threads_dict = {}
         self.started_clients_threads_list = []
-        self.lock = threading.Lock()
 
     def _accept_connections(self):
         """
